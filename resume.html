@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blake's Resume - Professional Experience and Skills">
+    <title>Resume - Blake</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text"><span class="letter">B</span><span class="letter">l</span><span class="letter">a</span><span class="letter">k</span><span class="letter">e</span><span class="letter"> </span><span class="letter">B</span><span class="letter">a</span><span class="letter">i</span><span class="letter">r</span><span class="letter">d</span></a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link active">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content resume-page">
+        <div class="container">
+            <div class="resume-header">
+                <h1 class="page-title">Resume</h1>
+                <a href="#" class="btn btn-primary" onclick="window.print(); return false;">Download PDF</a>
+            </div>
+
+            <!-- Contact Info -->
+            <section class="resume-section">
+                <div class="resume-contact">
+                    <p><strong>Email:</strong> blakebaird2@gmail.com</p>
+                    <p><strong>Phone:</strong> 480-703-8818</p>
+                    <p><strong>Location:</strong> Provo, Utah</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/blakebaird1" target="_blank">BlakeBaird</a></p>
+                </div>
+            </section>
+
+            <!-- Professional Summary -->
+            <section class="resume-section">
+                <h2 class="resume-section-title">Professional Summary</h2>
+                <p class="resume-text">
+                    Experienced web developer with a strong foundation in frontend technologies and 
+                    responsive design. Passionate about creating intuitive user interfaces and 
+                    delivering high-quality web solutions. Skilled in modern web development 
+                    frameworks and committed to writing clean, maintainable code.
+                </p>
+            </section>
+
+            <!-- Experience -->
+            <section class="resume-section">
+                <h2 class="resume-section-title">Professional Experience</h2>
+                
+                <div class="resume-item">
+                    <div class="resume-item-header">
+                        <h3 class="resume-item-title">Senior Web Developer</h3>
+                        <span class="resume-item-date">2021 - Present</span>
+                    </div>
+                    <p class="resume-item-company">Company Name, City, State</p>
+                    <ul class="resume-item-list">
+                        <li>Developed and maintained responsive web applications using modern JavaScript frameworks</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality user experiences</li>
+                        <li>Implemented best practices for code quality, performance, and accessibility</li>
+                        <li>Mentored junior developers and conducted code reviews</li>
+                    </ul>
+                </div>
+
+                <div class="resume-item">
+                    <div class="resume-item-header">
+                        <h3 class="resume-item-title">Web Developer</h3>
+                        <span class="resume-item-date">2019 - 2021</span>
+                    </div>
+                    <p class="resume-item-company">Company Name, City, State</p>
+                    <ul class="resume-item-list">
+                        <li>Built responsive websites and web applications from concept to deployment</li>
+                        <li>Optimized website performance and improved loading times by 40%</li>
+                        <li>Worked closely with designers to implement pixel-perfect UI designs</li>
+                        <li>Participated in Agile development processes and sprint planning</li>
+                    </ul>
+                </div>
+
+                <div class="resume-item">
+                    <div class="resume-item-header">
+                        <h3 class="resume-item-title">Junior Web Developer</h3>
+                        <span class="resume-item-date">2017 - 2019</span>
+                    </div>
+                    <p class="resume-item-company">Company Name, City, State</p>
+                    <ul class="resume-item-list">
+                        <li>Assisted in the development and maintenance of client websites</li>
+                        <li>Learned and applied modern web development best practices</li>
+                        <li>Fixed bugs and implemented feature requests</li>
+                        <li>Participated in team meetings and knowledge-sharing sessions</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="resume-section">
+                <h2 class="resume-section-title">Education</h2>
+                
+                <div class="resume-item">
+                    <div class="resume-item-header">
+                        <h3 class="resume-item-title">Bachelor of Science in Computer Science</h3>
+                        <span class="resume-item-date">2013 - 2017</span>
+                    </div>
+                    <p class="resume-item-company">University Name, City, State</p>
+                    <p class="resume-text">Relevant Coursework: Web Development, Database Systems, Software Engineering, User Interface Design</p>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="resume-section">
+                <h2 class="resume-section-title">Technical Skills</h2>
+                
+                <div class="skills-section">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <p>JavaScript, TypeScript, HTML5, CSS3, Python</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <p>React, Vue.js, Node.js, Express, jQuery</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <p>Git, Webpack, npm, RESTful APIs, Responsive Design, CSS Preprocessors</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Design Tools</h3>
+                        <p>Figma, Adobe XD, Photoshop, Illustrator</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications (Optional) -->
+            <section class="resume-section">
+                <h2 class="resume-section-title">Certifications</h2>
+                <div class="resume-item">
+                    <div class="resume-item-header">
+                        <h3 class="resume-item-title">Certified Web Developer</h3>
+                        <span class="resume-item-date">2020</span>
+                    </div>
+                    <p class="resume-item-company">Certification Authority</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">BB</div>
+            <p>&copy; 2025 Blake. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

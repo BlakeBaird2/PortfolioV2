@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .bb-text {
+      font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      font-size: 68px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-anchor: middle;
+      fill: #000000;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bb-text {
+        fill: #ffffff;
+      }
+    }
+  </style>
+  <text x="53" y="77" class="bb-text">BB</text>
+</svg>
