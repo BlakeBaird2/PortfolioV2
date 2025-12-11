@@ -132,6 +132,7 @@ ul {
     -webkit-transform: translateZ(0);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    will-change: auto;
 }
 
 .nav-container {
@@ -268,7 +269,7 @@ ul {
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
-    transition: color 0.2s ease;
+    transition: none;
 }
 
 .nav-link::after {
@@ -279,7 +280,7 @@ ul {
     width: 0;
     height: 2px;
     background-color: var(--primary-color);
-    transition: var(--transition);
+    transition: none;
 }
 
 .nav-link:hover::after,
@@ -645,8 +646,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     padding: 0;
     background-color: var(--background);
     border-radius: 50%;
@@ -657,8 +658,8 @@ ul {
 }
 
 .contact-link svg {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     transition: var(--transition);
 }
 
@@ -1117,13 +1118,13 @@ ul {
         box-shadow: none;
         margin-top: -1px;
     }
-    
+
     .nav-container.menu-open,
     .nav-menu.active ~ * .nav-container,
     .navbar:has(.nav-menu.active) .nav-container {
         border-bottom: none !important;
     }
-    
+
     .navbar:has(.nav-menu.active) {
         z-index: 1001;
         background-color: #FAFAF8;
@@ -1237,19 +1238,25 @@ ul {
 
     .section-title {
         font-size: 1.75rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .page-title {
         font-size: 2rem;
         text-align: left;
+        margin-top: 2rem;
+        margin-bottom: 1.25rem;
     }
-    
+
     .page-header {
         text-align: left;
+        margin-bottom: 2rem;
     }
-    
+
     .page-subtitle {
         text-align: left;
+        font-size: 1.05rem;
     }
 
     .profile-image-container {
@@ -1271,12 +1278,12 @@ ul {
     .btn {
         width: auto;
     }
-    
+
     .btn-primary {
         width: 45%;
         max-width: 200px;
     }
-    
+
     .btn-secondary {
         width: 40%;
         max-width: 180px;
@@ -1298,6 +1305,7 @@ ul {
 
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
     }
 
     .resume-item-header {
@@ -1307,21 +1315,61 @@ ul {
 
     .skills-section {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .resume-contact {
         grid-template-columns: 1fr;
+        padding: 1.25rem;
+    }
+
+    /* Mobile spacing optimizations */
+    .about-section,
+    .contact-section {
+        padding: 3rem 0 2.5rem 0;
+    }
+
+    .about-text {
+        margin-bottom: 2rem;
+    }
+
+    .resume-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .resume-section-title {
+        font-size: 1.75rem;
+        margin-top: 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .resume-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .resume-header {
+        margin-bottom: 2rem;
     }
 }
 
 /* Small Mobile */
 @media screen and (max-width: 480px) {
     .hero-section {
-        padding: 2rem 0;
+        padding: 1.5rem 0 2rem 0;
     }
 
     .hero-title {
         font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-description {
+        margin-bottom: 1.25rem;
     }
 
     .container {
@@ -1337,25 +1385,47 @@ ul {
     }
 
     .main-content {
-        padding: 1rem 0;
+        padding: 0.75rem 0 1.5rem 0;
     }
 
     .about-section,
     .contact-section {
-        padding: 2rem 0;
+        padding: 2rem 0 1.5rem 0;
     }
 
     .section-title {
         font-size: 1.5rem;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.25rem;
     }
 
     .page-title {
         font-size: 1.75rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .page-header {
+        margin-bottom: 1.5rem;
     }
 
     .resume-section {
-        margin-bottom: 2rem;
+        margin-bottom: 1.75rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .resume-section-title {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .resume-item {
+        margin-bottom: 1.25rem;
+    }
+
+    .resume-header {
+        margin-bottom: 1.5rem;
     }
 
     .project-content {
@@ -1364,6 +1434,36 @@ ul {
 
     .project-title {
         font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .project-description {
+        margin-bottom: 1rem;
+    }
+
+    .project-tags {
+        margin-bottom: 1rem;
+    }
+
+    .about-text {
+        margin-bottom: 1.5rem;
+    }
+
+    .skills-grid {
+        gap: 1rem;
+    }
+
+    .skill-item {
+        padding: 1.25rem;
+    }
+
+    .contact-text {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer {
+        margin-top: 3rem;
+        padding: 1.5rem 0;
     }
 }
 

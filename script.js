@@ -118,19 +118,17 @@ async function loadPage(url) {
 function updateActiveNavLink(url) {
     const navLinks = document.querySelectorAll('.nav-link');
     const currentPage = url.split('/').pop() || 'index.html';
-    
-    // Use requestAnimationFrame to ensure smooth update without flash
-    requestAnimationFrame(() => {
-        navLinks.forEach(link => {
-            const linkHref = link.getAttribute('href');
-            link.classList.remove('active');
-            
-            if (linkHref === currentPage || 
-                (currentPage === '' && linkHref === 'index.html') ||
-                (currentPage === 'index.html' && linkHref === 'index.html')) {
-                link.classList.add('active');
-            }
-        });
+
+    // Update immediately without any delay or animation frame
+    navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        link.classList.remove('active');
+
+        if (linkHref === currentPage ||
+            (currentPage === '' && linkHref === 'index.html') ||
+            (currentPage === 'index.html' && linkHref === 'index.html')) {
+            link.classList.add('active');
+        }
     });
 }
 
@@ -157,14 +155,7 @@ function initializePage() {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
-    
-    // Re-initialize logo collapse animation
-    const logoText = document.querySelector('.logo-text');
-    if (logoText) {
-        // Reset scroll position for logo
-        logoText.classList.remove('collapsed');
-    }
-    
+
     // Re-initialize hero title animation if on home page
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
