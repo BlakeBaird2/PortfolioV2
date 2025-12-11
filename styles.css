@@ -28,6 +28,8 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -41,6 +43,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
     padding-top: 60px;
+    font-display: swap;
 }
 
 /* Main heading and important elements use Inter font */
